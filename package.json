@@ -1,0 +1,22 @@
+{
+  "name": "api-explorer-rocketseat",
+  "version": "1.0.0",
+  "description": "Criando um projeto utilizando o NodeJs na trilha Explorer do curso da rocketseat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucassdacosta/api-explorer-rocketseat.git"
+  },
+  "author": "Lucas Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucassdacosta/api-explorer-rocketseat/issues"
+  },
+  "homepage": "https://github.com/lucassdacosta/api-explorer-rocketseat#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
