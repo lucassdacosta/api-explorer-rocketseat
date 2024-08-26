@@ -4,7 +4,8 @@
   "description": "Criando um projeto utilizando o NodeJs na trilha Explorer do curso da rocketseat.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/lucassdacosta/api-explorer-rocketseat#readme",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
