@@ -1,6 +1,7 @@
 {
   "name": "api-explorer-rocketseat",
   "version": "1.0.0",
+  "type": "module",
   "description": "Criando um projeto utilizando o NodeJs na trilha Explorer do curso da rocketseat.",
   "main": "index.js",
   "scripts": {
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/lucassdacosta/api-explorer-rocketseat#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
