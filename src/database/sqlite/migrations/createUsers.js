@@ -1,0 +1,10 @@
+export const createUsers = `
+  CREATE TABLE users (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name VARCHAR,
+	email VARCHAR,
+	avatar NULL,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+`;
