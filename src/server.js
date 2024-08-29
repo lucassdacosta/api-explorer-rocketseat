@@ -2,11 +2,14 @@ import "express-async-errors"
 import { AppError } from "./utils/AppError.js"
 import  express  from "express"
 import { routes } from "./routes/index.js"
+import { sqliteConnection } from "./database/sqlite/index.js"
 
 const app = express();
 app.use(express.json());
 
 app.use(routes);
+
+sqliteConnection()
 
 app.use((error, request, response, next) => {
   if(error instanceof AppError){
