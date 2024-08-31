@@ -1,3 +1,4 @@
+import pkg from "bcryptjs";
 import { AppError } from "../utils/AppError.js"
 import { sqliteConnection } from "../database/sqlite/index.js";
 
@@ -12,7 +13,10 @@ export class UsersController{
       throw new AppError('Este e-mail já está em uso');
     }
 
-    await database.run('INSERT INTO users (name, email, password) VALUES (?, ?, ?)', [name, email, password]);
+    const { hash } = pkg;
+    const hashedPassword = await hash(password, 8);
+
+    await database.run('INSERT INTO users (name, email, password) VALUES (?, ?, ?)', [name, email, hashedPassword]);
 
     return response.status(201).json();
   }
