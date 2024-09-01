@@ -38,8 +38,8 @@ export class UsersController{
       throw new AppError('Esse e-mail já está em uso.')
     }
     
-    user.name = name;
-    user.email = email;
+    user.name = name ?? user.name;
+    user.email = email ?? user.email;
 
     const { hash, compare } = pkg;
 
