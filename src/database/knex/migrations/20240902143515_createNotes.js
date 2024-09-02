@@ -10,7 +10,6 @@ export function up(knex){
     table.timestamp("updated_at").default(knex.fn.now());
   })
 }
-  
 
 export function down(knex){
   return knex.schema.dropTable("notes");
